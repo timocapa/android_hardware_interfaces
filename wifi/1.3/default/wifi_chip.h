@@ -246,7 +246,6 @@ class WifiChip : public V1_3::IWifiChip {
     std::string allocateApIfaceName();
     std::string allocateStaIfaceName();
     bool writeRingbufferFilesInternal();
-    void QcRemoveAndClearDynamicIfaces();
 
     ChipId chip_id_;
     std::weak_ptr<legacy_hal::WifiLegacyHal> legacy_hal_;
